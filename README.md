@@ -1,3 +1,4 @@
+# DuoLang Js
 it's simple model for multi language website
 ### how to use ?
 it's simple
