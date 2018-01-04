@@ -1,4 +1,4 @@
-class Language{
+class duoLang{
 
     Words : object = {};
 
