@@ -1,0 +1,28 @@
+<html>
+</html>
+<body>
+
+
+<button onclick="lng.setCookieLang('ar');">Ar</button><button onclick="lng.setCookieLang('en');">En</button>
+<a href="#" data-word="About"></a>
+<a href="#" data-word="Contact"></a>
+<a href="#" data-word="SignIn"></a>
+
+<script src="duolang.js"></script>
+<script>
+    var lng = new language(); //call duolang here 
+
+    lng.setWords(  //set your dectionary
+        {'About' : 'About Us',// ex About will return About Us
+          'Contact':'Contact Us',
+          'SignIn' :'Sign In',}
+        ,'en');
+    lng.setWords(
+        {'About': 'اقرأ عنا',
+            'Contact': 'تواصل معنا',
+            'SignIn': 'تسجيل الدخول',}
+        ,'ar');
+    lng.setLang();// set language here
+    lng.arabicDirection(); // if you use arabic ,you can use this to change style direction
+</script>
+</body>
